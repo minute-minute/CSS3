@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <link href="选择器.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--not-->
+<div class="not_s" id="header">我是not选择器header</div>
+<div class="not_s" id="middle">我是not选择器middle</div>
+<div class="not_s" id="footer">我是not选择器footer</div><br/><br/>
+<!--empty-->
+<div class="empty_s">我这里有内容</div>
+<div class="empty_s"> <!--我这里有空格--></div>
+<div class="empty_s"><!--我这里没有内容--></div><br/><br/>
+<!--target-->
+<div class="target_s" id="brand">
+    <a href="#brand">Brand</a>
+    <p>我是target选择器p</p>
+</div><br/><br/>
+<!--first-child-->
+<ul class="first_child">
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link2</a></li>
+    <li><a href="#">Link3</a></li>
+    <li><a href="#">Link4</a></li>
+    <li><a href="#">Link5</a></li>
+</ul><br/><br/>
+<!--first-child-->
+<ul class="last_child">
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+</ul><br/><br/>
+<!--nth-child(n)-->
+<ul class="nth_child">
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+    <li>Item6</li>
+    <li>Item7</li>
+    <li>Item8</li>
+</ul><br/><br/>
+<!--nth-last-child(n)-->
+<ol class="nth_last_child">
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+    <li>Item6</li>
+</ol><br/><br/>
+<!--first-of-type-->
+<div class="first_of_type">
+    <p>我是第一个段落</p>
+    <p>我是第二个段落</p>
+    <div>我是第一个DIV</div>
+    <div>我是第二个DIV</div>
+    <p>我是第三个段落</p>
+    <p>我是第四个段落</p>
+    <div>我是第三个DIV</div>
+    <div>我是第四个DIV</div>
+</div><br/><br/>
+<!--nth-of-type(n)-->
+<div class="nth_of_type">
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+</div><br/><br/>
+<!--last-of-type-->
+<div class="last_of_type">
+    <div>我是一个DIV</div>
+    <div>我是一个DIV</div>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+</div><br/><br/>
+<!--nth-last-of-type(n)-->
+<div class="nth_last_of_type">
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+</div><br/><br/>
+<!--only-child-->
+<div class="only_child">
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ul>
+    <ul>
+        <li>Item1</li>
+    </ul>
+    <ol>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ol>
+    <ol>
+        <li>Item1</li>
+    </ol>
+</div><br/><br/>
+<!--only-of-type-->
+<div class="only_of_type">
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+</div>
+<div class="only_of_type">
+    <p>我是一个段落</p>
+</div>
+<div class="only_of_type">
+    <div>我是一个DIV</div>
+    <p>我是一个段落</p>
+    <div>我是一个DIV</div>
+</div>
+</body>
+</html>

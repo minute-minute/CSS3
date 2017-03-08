@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器2</title>
+    <link href="选择器2.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--enabled-->
+<form action="#" class="enabled_s">
+    <div>
+        <label for="enabled">可用输入框:</label>
+        <input type="text" id="enabled"/>
+    </div>
+    <div>
+        <label for="disabled">禁用输入框:</label>
+        <input type="text" id="disabled" disabled="disabled"/>
+    </div>
+</form><br/>
+<!--disabled-->
+<form action="#" class="disabled_s">
+    <div><input type="text"/></div>
+    <div>
+        <input type="submit" value="要回到上一步"/>
+        <input type="submit" value="禁止点下一步" disabled="disabled"/>
+    </div>
+</form><br/>
+<!--selection-->
+<p class="selection_s">
+    “::selection”伪元素是用来匹配突出显示的文本。浏览器默认情况下，选择网站文本是深蓝的背景，白色的字体，
+    有的设计要求不使用上图那种浏览器默认的突出文本效果，需要一个与众不同的效果，此时“::selection”伪元素就非常的实用。不过在Firefox浏览器还需要添加前缀。
+</p><br/><br/>
+<!--read-write-->
+<form action="#" class="read-write">
+    <div>
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="xenafable"/>
+    </div>
+    <div>
+        <label for="address">地址：</label>
+        <input type="text" id="address" name="address" placeholder="中国上海" readonly="readonly"/>
+    </div>
+</form>
+
+</body>
+</html>

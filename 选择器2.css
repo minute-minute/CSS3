@@ -1,0 +1,62 @@
+/*enabled选择器*/
+.enabled_s div{
+    margin:30px;
+}
+.enabled_s input[type=text]:enabled{
+    border:1px solid #f36;
+    box-shadow:0 0 5px #f36;
+}
+.enabled_s input[type=text]:disabled{
+    box-shadow:none;
+}
+/*disabled选择器*/
+.disabled_s form{margin:10px;}
+.disabled_s div{margin:10px;}
+.disabled_s input{
+    padding:10px;
+    border:1px solid orange;
+    border-radius:5px;
+}
+.disabled_s input[type="submit"]{
+    background:orange;
+    color:#fff;
+}
+.disabled_s input[type="submit"]:disabled{
+    background:#eee;
+    border-color:#eee;
+    color:#ccc;
+}
+/*selection选择器*/
+::selection{
+    background:orange;
+    color:white;
+}
+-moz::selection{
+    background:orange;
+    color:white;
+}
+/*read-write选择器*/
+.read-write{
+    border:1px solid #ccc;
+    width:300px;
+    padding:10px;
+}
+.read-write>div{
+    padding:10px;
+}
+.read-write input[type="text"]{
+    padding:5px;
+    border:1px solid orange;
+    border-radius:5px;
+}
+.read-write input[type="text"]:read-only{
+    border-color:#ccc;
+}.read-write input[type="text"]:-moz-read-only{
+     border-color:#ccc;
+ }
+.read-write input[type="text"]:read-write{
+    border:2px solid red;
+}
+.read-write input[type="text"]:-moz-read-write{
+      border:2px solid red;
+  }

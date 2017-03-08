@@ -1,0 +1,79 @@
+/*not选择器*/
+.not_s{
+    background:green;
+}
+.not_s:not([id=footer]){
+    background:red;
+}
+/*empty选择器*/
+.empty_s{
+    height:50px;
+}
+.empty_s:empty{
+    border:1px solid green;
+}
+/*target选择器*/
+#brand:target p{
+    background:red;color:#fff;
+}
+/*first-child选择器*/
+.first_child>li:first-child{
+    color:blue;
+}
+/*last-child选择器*/
+.last_child>li:last-child{
+    background:red;
+}
+/*nth-child(n)选择器*/
+.nth_child>li:nth-child(2n){
+    background:green;
+}
+/*nth-last-child(n)选择器*/
+.nth_last_child>li:nth-last-child(3){
+    background:blue;
+}
+/*first-of-type选择器*/
+.first_of_type div:first-of-type{
+    background:red;
+}
+/*nth-of-type(n)选择器*/
+.nth_of_type div:nth-of-type(2n-1),
+.nth_of_type p:nth-of-type(2n){
+    background:#f60;
+}
+/*或者*/
+.nth_of_type div:nth-of-type(odd),
+.nth_of_type p:nth-of-type(2n){
+     background:#f60;
+ }
+/*或者*/
+.nth_of_type div:not:nth-of-type(2n),
+.nth_of_type p:nth-of-type(even){
+      background:#f60;
+  }
+/*last-of-type选择器*/
+.last_of_type p:last-of-type{
+    background:green;
+}
+/*nth-last-of-type(n)选择器*/
+.nth_last_of_type p:nth-last-of-type(2n-1){
+    background:blue;
+}
+/*only-child选择器*/
+.only_child li{
+    background:green;
+    padding:10px;
+    margin-bottom:5px;
+}
+.only_child li:only-child{
+    background:orange;
+}
+/*only-of-type选择器*/
+.only_of_type{
+    border:1px solid #ccc;
+    margin-bottom:5px;
+}
+.only_of_type p:only-of-type{
+    background:orange;
+}
+
