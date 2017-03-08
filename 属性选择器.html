@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style type="text/css">
+        a[href$=doc]{background:red;}
+        a[class^=cla]{background:green;}
+        a[title*=title]{background:blue;}
+        :root{background:yellow;}/*:root根选择器*/
+    </style>
+</head>
+<body>
+<a href="1.doc">我的背景想变成红色</a>
+<a href="1.doc">我的背景想变成红色</a><br/>
+<a href="#" class="claabc">我的背景想变成绿色</a>
+<a href="#" class="claert">我的背景想变成绿色</a>
+<a href="#" class="clafgg">我的背景想变成绿色</a><br/>
+<a href="#" title="我是title的aaa">我的背景想变成蓝色</a>
+<a href="#" title="我是title的bbb">我的背景想变成蓝色</a><br/>
+<div>root我是根选择器</div>
+</body>
+</html>
